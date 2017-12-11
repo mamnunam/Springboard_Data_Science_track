@@ -1,0 +1,121 @@
+The data is related to the direct marketing campaigns of a Portuguese banking institution. 
+The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, 
+in order to access if the product (bank term deposit) would be (or not) subscribed.
+
+This dataset is based on "Bank Marketing" UCI dataset (http://archive.ics.uci.edu/ml/datasets/Bank+Marketing). 
+The data are enriched by the addition of five new social and economic features/attributes 
+(national wide indicators from a ~10M population country), published by the Banco de Portugal and publicly available at: 
+https://www.bportugal.pt/estatisticasweb. 
+The binary classification goal is to predict if the client will subscribe a bank term deposit (variable y).
+
+*Number of Instances*: 41188
+
+**Number of Attributes**: 21 output attribute
+
+**Input variables:**
+   
+  **General customer data**
+   
+   1. age (numeric)
+  
+   2. job (categorical): type of job 
+       +  "admin."
+       -  "blue-collar"
+       -  "entrepreneur"
+       -  "housemaid"
+       -  "management"
+       -  "retired"
+       -  "self-employed"
+       -  "services"
+       -  "student"
+       -  "technician"
+       -  "unemployed"
+       -  "unknown"
+   3. marital (categorical): marital status
+       -  "divorced" (means divorced or widowed)
+       -  "married"
+       -  "single"
+       -  "unknown"
+   4. education (categorical):
+       -  "basic.4y"
+       -  "basic.6y"
+       -  "basic.9y"
+       -  "high.school"
+       -  "illiterate"
+       -  "professional.course"
+       -  "university.degree"
+       -  "unknown"
+   5. default (categorical): has defaulted on a credit? 
+       -  "no"
+       -  "yes"
+       -  "unknown"
+   6. housing (categorical): has a house loan? 
+       -  "no"
+       -  "yes"
+       -  "unknown"
+   7. loan: has personal loan? (categorical)
+       -  "no"
+       -  "yes"
+       -  "unknown"
+   
+ **Data related to the last marketing contact with the customer**
+  
+  
+   8. contact (categorical): contact communication type 
+       -  "cellular"
+       -  "telephone"
+   9. month (categorical): last contact month of the year 
+   
+       -  "jan"
+       -  "feb"
+       -  "mar"
+       -  "apr"
+       -  "may"
+       -  "jun"
+       -  "jul"
+       -  "aug"
+       -  "sep"
+       -  "oct"
+       -  "nov"
+       -  "dec"
+      
+  10. day_of_week (categorical): last contact day of the work week 
+  
+       -  "mon"
+       -  "tue"
+       -  "wed"
+       -  "thu"
+       -  "fri"
+       
+  11. duration (numeric): duration of the last contact in seconds (numeric). This attribute highly affects the output target 
+     (e.g., if duration=0 then y="no"). Yet, the duration is not known before a call is performed. Also, after the end of the call 
+      y is obviously known. Thus, this input should only be included for benchmark purposes and should be discarded 
+      if the intention is to have a realistic predictive model.
+ 
+**Other data**
+ 
+  12. campaign (numeric, includes last contact): number of contacts performed during this campaign and for this client 
+  13. pdays (numeric): number of days that passed after the customer was last contacted during a previous merketing campaign; 
+      999 means the customer was not previously contacted
+  14. previous (numeric): number of contacts performed before this campaign and for this customer 
+  15. poutcome (categorical): outcome of the previous marketing campaign
+       -  "failure"
+       -  "nonexistent"
+       -  "success"
+       
+**Social and economic context attributes**
+ 
+  16. emp.var.rate (numeric): employment variation rate - quarterly indicator 
+  17. cons.price.idx (numeric): consumer price index - monthly indicator    
+  18. cons.conf.idx (numeric): consumer confidence index - monthly indicator    
+  19. euribor3m (numeric): euribor 3 month rate - daily indicator
+  20. nr.employed (numeric): number of employees - quarterly indicator 
+
+**Output variable (desired target)**:
+ 
+  21. y (binary): has the customer subscribed for a deposit?
+       -  "yes"
+       -  "no"
+
+**Missing Attribute Values**: There are several missing values in some categorical attributes, all coded with the "unknown" label. 
+These missing values can be treated as a possible class label or using deletion or imputation techniques. 
