@@ -1,0 +1,30 @@
+CPU usage: 26.73% user, 24.59% sys, 48.66% idle 
+CPU usage: 14.75% user, 9.54% sys, 75.70% idle 
+CPU usage: 15.63% user, 6.63% sys, 77.72% idle 
+CPU usage: 12.76% user, 6.14% sys, 81.8% idle 
+CPU usage: 13.50% user, 6.39% sys, 80.9% idle 
+CPU usage: 14.48% user, 7.12% sys, 78.38% idle 
+CPU usage: 15.45% user, 7.25% sys, 77.28% idle 
+CPU usage: 19.38% user, 9.45% sys, 71.15% idle 
+CPU usage: 14.42% user, 7.32% sys, 78.25% idle 
+CPU usage: 14.72% user, 8.31% sys, 76.95% idle 
+CPU usage: 13.94% user, 6.38% sys, 79.66% idle 
+CPU usage: 13.90% user, 7.72% sys, 78.36% idle 
+CPU usage: 14.89% user, 8.3% sys, 77.6% idle 
+CPU usage: 12.76% user, 9.92% sys, 77.30% idle 
+CPU usage: 13.30% user, 6.41% sys, 80.28% idle 
+
+Processes: 421 total, 2 running, 419 sleeping, 2396 threads                                                       11:17:54
+Load Avg: 2.85, 2.70, 2.71  CPU usage: 15.52% user, 7.36% sys, 77.11% idle
+SharedLibs: 177M resident, 50M data, 17M linkedit. MemRegions: 137089 total, 5474M resident, 110M private, 2998M shared.
+PhysMem: 16G used (3231M wired), 221M unused.
+VM: 1891G vsize, 1097M framework vsize, 8029649(0) swapins, 8992880(0) swapouts.
+Networks: packets: 18329343/19G in, 11490457/2394M out. Disks: 5808548/166G read, 6461120/134G written.
+
+PID    COMMAND      %CPU TIME     #TH   #WQ  #PORT MEM    PURG   CMPRS  PGRP  PPID  STATE    BOOSTS          %CPU_ME
+12143  Google Chrom 10.4 04:32:30 20    1    192   139M+  0B     396M-  795   795   sleeping *0[1]           0.00000
+0      kernel_task  6.3  07:19:40 135/4 0    2     1280M- 0B     0B     0     0     running   0[0]           0.00000
+966    Google Chrom 5.5  04:42:21 17    1    160   34M+   0B     131M   795   795   sleeping *0[1]           0.00000
+20989  Google Chrom 5.4  25:31.51 17    1    159   65M+   0B     117M   795   795   sleeping *0[1]           0.00000
+982    Google Chrom 5.2  03:26:15 17    1    163   65M+   0B     237M   795   795   sleeping *0[1]           0.00000
+20304  Google Chrom 5.1  67:48.54 19    1    208+  281M-  0B     122M   795   795   sleeping *0[1]           0.00000
