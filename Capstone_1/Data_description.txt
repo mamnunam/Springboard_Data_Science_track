@@ -8,7 +8,7 @@ The data are enriched by the addition of five new social and economic features/a
 https://www.bportugal.pt/estatisticasweb. 
 The binary classification goal is to predict if the client will subscribe a bank term deposit (variable y).
 
-*Number of Instances*: 41188
+*Number of Instances*: 41,176
 
 **Number of Attributes**: 21 output attribute
 
