@@ -1,0 +1,35 @@
+Data: The PC test performance data that includes information on the physical/virtual memory, RAM, and software errors. The data set has 5,609,148 rows and 12 features (input variables) stored in a .csv file.
+
+Description of the variables:
+
+pcid: Device ID
+
+date: The day the measurement was taken. The missing values are imputed using the forward-fill and back-fill propagation, as well as taking an average approaches.
+
+free_physical_memory: How much free physical memory was available on a device on a given date (in Mb)
+
+free_virtual_memory: How much free virtual memory was available on a device on a given date (in Mb)
+
+daily_average_ram: Percentage of RAM in use per day (sampled each minute and averaged)
+
+daily_std_dev_ram: The standard deviation from daily_average_ram (sampled each minute and averaged)
+
+windows_events_count: Whether an Error or Critical Windows event occured on a given day
+
+has_bios_error: Whether a device reported an error on a given day
+
+driver_crash_count: How many driver crashes occured on a device on a given day
+
+average_time_since_last_boot: Time since the last Windows start (in ms)
+
+next_reimage: The date and time when a device is expected to have the next OS reimage. This date is defined retrospectively by capturing the actual reimage date later on.
+
+zone: The risk zone of the device, indicating when a device will require a reimage. This variable is the label we'll be trying to predict. This variable is defined by the next_reimage variable as per below:
+
+Zone 0: Device is healthy (the date of next reimage is NaN)
+Zone 1: Device will have a reimage in the next 0-10 days
+Zone 2: Device will have a reimage in the next 11-20 days
+Zone 3: Device will have a reimage in the next 21-30 days
+Zone 4: Device will have a reimage in the next 31-40 days
+Zone 5: Device will have a reimage in the next 41-50 days
+Zone 6: Device will have a reimage in the next 51-60 days
